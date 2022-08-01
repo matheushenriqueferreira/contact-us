@@ -3,3 +3,31 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+.image {
+  width: 500px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  padding: 20px 40px;
+}
+
+.content h1 {
+  font-weight: 400;
+}
+
+
+
+
