@@ -5,11 +5,15 @@
 }
 
 html {
-  --bg-color: #D2D2D2;
+  --bg-color: #FFFFFF;
   --text-color: #000000;
+  --label-color:#b1b0b0;
+  --border-color: #000000;
 }
 
 body {
+  background: var(--bg-color);
+  color: var(--text-color);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,8 +21,22 @@ body {
 }
 
 body.light {
-  background: var(--bg-color);
-  color: var(--text-color);
+  --bg-color: #FFFFFF;
+  --text-color: #000000;
+  --label-color:#b1b0b0;
+  --border-color: #000000;
+}
+
+input, textarea {
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: var(--border-color) 2px solid;
+  outline: 0;
+  background: 0;
+  font-weight: 700;
+  width: 100%;  
+  margin-top: 5px;
 }
 
 .image {
@@ -45,16 +63,21 @@ body.light {
 
 .contactForm {
   display: flex;
+  gap: 2em;
   flex-direction: column;
 }
 
-.contactForm input {
-  width: 100%;
+.contactForm div label {
+  color: var(--label-color);
+}
+
+.contactForm div input {
   height: 30px;
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  outline: 0;
+}
+
+.contactForm div textarea {
+  height: 50px;
+  resize: none;
 }
 
 
