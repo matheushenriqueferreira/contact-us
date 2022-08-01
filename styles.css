@@ -29,6 +29,7 @@ body.light {
   --border-color: #000000;
   --button-bgColor: #000000;
   --button-text: #FFFFFF;
+  transition: all .4s ease-in-out;
 }
 
 body.dark {
@@ -38,6 +39,7 @@ body.dark {
   --border-color: #FFFFFF;
   --button-bgColor: #b1b0b0;
   --button-text: #000000;
+  transition: all .4s ease-in-out;
 }
 
 input, textarea {
@@ -77,43 +79,48 @@ input, textarea {
   gap: .5em;
 }
 
+.contactSwitch input {
+  cursor: pointer;
+}
+
 .content div h1 {
   font-weight: 400;
   font-size: 48px;
 }
 
-.contactForm {
+#contactForm {
   display: flex;
   gap: 2em;
   flex-direction: column;
 }
 
-.contactForm div label {
+#contactForm div label {
   color: var(--label-color);
 }
 
-.contactForm div input {
+#contactForm div input {
   height: 30px;
   transition: height .5s ease-in;
 }
 
-.contactForm div input:focus {
+#contactForm div input:focus {
   height: 40px;
 }
 
-.contactForm div textarea {
+#contactForm div textarea {
   height: 50px;
   resize: none;
   transition: height .5s ease-in;
 }
 
-.contactForm div textarea:focus {
+#contactForm div textarea:focus {
   height: 80px;
 }
 
-.contactForm button {
+#contactForm button {
   background: var(--button-bgColor);
   color: var(--button-text);
+  border: 0;
   filter: brightness(70%);
   width: 150px;
   height: 30px;
@@ -121,7 +128,7 @@ input, textarea {
   transition: filter .5s ease-in;
 }
 
-.contactForm button:hover {
+#contactForm button:hover {
   filter: brightness(100%);
 }
 
