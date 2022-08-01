@@ -97,9 +97,15 @@ input, textarea {
 .contactForm button {
   background: var(--button-bgColor);
   color: var(--button-text);
+  filter: brightness(70%);
   width: 150px;
   height: 30px;
   cursor: pointer;
+  transition: filter .5s ease-in;
+}
+
+.contactForm button:hover {
+  filter: brightness(100%);
 }
 
 
