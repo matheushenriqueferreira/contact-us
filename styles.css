@@ -31,11 +31,21 @@ body.light {
   --button-text: #FFFFFF;
 }
 
+body.dark {
+  --bg-color: #000000;
+  --text-color: #FFFFFF;
+  --label-color:#b1b0b0;
+  --border-color: #FFFFFF;
+  --button-bgColor: #b1b0b0;
+  --button-text: #000000;
+}
+
 input, textarea {
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom: var(--border-color) 2px solid;
+  color: var(--label-color);
   outline: 0;
   background: 0;
   font-weight: 700;
