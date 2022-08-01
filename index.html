@@ -16,18 +16,21 @@
           <h1>CONTATE-NOS</h1>
         </div>
         <div>
-          <form action="" class="contactForm">
+          <form class="contactForm">
             <div>
               <label for="contactName">Nome completo</label>
-              <input id="contactName" type="text" placeholder="Seu nome completo" required="" />
+              <input id="contactName" type="text" placeholder="Seu nome completo" required  minlength="5" maxlength="50"/>
             </div>
             <div>
               <label for="contactEmail">E-mail</label>
-              <input id="contactEmail" type="email" placeholder="Seu e-mail" required="" />
+              <input id="contactEmail" type="email" placeholder="seuemail@exemplo.com" required minlength="5" maxlength="50"/>
             </div>
             <div>
               <label for="contactMessage">Mensagem</label>
-              <textarea id="contactMessage" placeholder="Sua mensagem"></textarea>
+              <textarea id="contactMessage" placeholder="Sua mensagem" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Enviar</button>
             </div>
           </form>
         </div>

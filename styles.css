@@ -9,6 +9,8 @@ html {
   --text-color: #000000;
   --label-color:#b1b0b0;
   --border-color: #000000;
+  --button-bgColor: #000000;
+  --button-text: #FFFFFF;
 }
 
 body {
@@ -25,6 +27,8 @@ body.light {
   --text-color: #000000;
   --label-color:#b1b0b0;
   --border-color: #000000;
+  --button-bgColor: #000000;
+  --button-text: #FFFFFF;
 }
 
 input, textarea {
@@ -88,6 +92,14 @@ input, textarea {
 
 .contactForm div textarea:focus {
   height: 80px;
+}
+
+.contactForm button {
+  background: var(--button-bgColor);
+  color: var(--button-text);
+  width: 150px;
+  height: 30px;
+  cursor: pointer;
 }
 
 
