@@ -73,11 +73,21 @@ input, textarea {
 
 .contactForm div input {
   height: 30px;
+  transition: height .5s ease-in;
+}
+
+.contactForm div input:focus {
+  height: 40px;
 }
 
 .contactForm div textarea {
   height: 50px;
   resize: none;
+  transition: height .5s ease-in;
+}
+
+.contactForm div textarea:focus {
+  height: 80px;
 }
 
 
