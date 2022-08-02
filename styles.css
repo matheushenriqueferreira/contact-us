@@ -25,7 +25,7 @@ body {
 body.light {
   --bg-color: #FFFFFF;
   --text-color: #000000;
-  --label-color:#b1b0b0;
+  --label-color:#868686;
   --border-color: #000000;
   --button-bgColor: #000000;
   --button-text: #FFFFFF;
@@ -35,7 +35,7 @@ body.light {
 body.dark {
   --bg-color: #000000;
   --text-color: #FFFFFF;
-  --label-color:#b1b0b0;
+  --label-color:#D2D2D2;
   --border-color: #FFFFFF;
   --button-bgColor: #b1b0b0;
   --button-text: #000000;
@@ -47,7 +47,7 @@ input, textarea {
   border-left: 0;
   border-right: 0;
   border-bottom: var(--border-color) 2px solid;
-  color: var(--label-color);
+  color: var(--text-color);
   outline: 0;
   background: 0;
   font-weight: 700;
