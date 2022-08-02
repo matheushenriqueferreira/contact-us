@@ -27,15 +27,15 @@
           <form id="contactForm" method="post">
             <div>
               <label for="contactName">Nome completo</label>
-              <input id="contactName" type="text" placeholder="Seu nome completo" required  minlength="5" maxlength="50" autocomplete="off"/>
+              <input id="contactName" type="text" placeholder="Seu nome completo" name="contactName" required  minlength="5" maxlength="50" autocomplete="off"/>
             </div>
             <div>
               <label for="contactEmail">E-mail</label>
-              <input id="contactEmail" type="email" placeholder="seuemail@exemplo.com" required minlength="5" maxlength="50" autocomplete="off"/>
+              <input id="contactEmail" type="email" placeholder="seuemail@exemplo.com" name="contactEmail" required minlength="5" maxlength="50" autocomplete="off"/>
             </div>
             <div>
               <label for="contactMessage">Mensagem</label>
-              <textarea id="contactMessage" placeholder="Sua mensagem" required autocomplete="off"></textarea>
+              <textarea id="contactMessage" placeholder="Sua mensagem" name="contactMessage" required autocomplete="off"></textarea>
             </div>
             <div>
               <button type="submit" id="btnSend">Enviar</button>
